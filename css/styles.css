@@ -1,32 +1,38 @@
-/* https://colorhunt.co/palette/ad8b73ceab93e3caa5fffbe9 */
+/* 
+    https://colorhunt.co/palette/0000001500503f0071610094 
+    https://colorhunt.co/palette/22577e5584ac95d1ccfaffaf
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,700;1,100;1,700&display=swap');
 
 body {
-    background-color: #FFFBE9;}
-p {
-    color: #AD8B73;
+    font-family: 'Noto Sans', sans-serif !important;
+    color: #DFF6FF;
+    background-color: #171A2E !important;
+}
+
+* {
+    color: #DFF6FF;
 }
 
 @media only screen and (max-width: 768px) {
     header {
         height: 220px;
-        background: linear-gradient(180deg, #E3CAA5 0%, #FFFBE9 100%);
+        background: linear-gradient(180deg, #000000 0%, #150050 100%);
         display: flex;
         align-items: center;
         justify-content: center;
     }
     
     h1.titulo-pagina {
-        color: #E3CAA5;
-        font-weight: 700;
+        color: #DFF6FF;
         font-size: 24px;
         margin-top: 15px;
-        margin-bottom: -10px;
     }
 
-    p.subitulo-pagina {
-        font-size: 14px;
-        font-weight: 300;
-        
+    p.subtitulo-pagina {
+        font-size: 12px;
+        font-weight: 300;        
     }
     
     .container-logo {
@@ -44,36 +50,54 @@ p {
         color: unset;
     }
 
-    footer {
-        background-color: #AD8B73;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .dev-meta-container {
+        width: 90%;
+        max-width: 900px;
     }
-    
+    .dev-meta-card {
+        background-color: #3E497A;
+        padding: 30px 10px;
+    }    
 }
 
 @media only screen and (min-width: 1024px) {
     header {
         height: 220px;
-        background: linear-gradient(180deg, #E3CAA5 0%, #FFFBE9 100%);
+        background: linear-gradient(180deg, #111324 0%, #171A2E 100%);
         display: flex;
         align-items: center;
         justify-content: center;
     }
     
     h1.titulo-pagina {
-        color: #E3CAA5;
-        font-weight: 700;
-        font-size: 24px;
+        color: #F0EBE3;
+        font-size: 40px;
         margin-top: 15px;
-        margin-bottom: -10px;
     }
 
-    p.subitulo-pagina {
-        font-size: 14px;
+    p.subtitulo-pagina {
+        font-size: 12px;
         font-weight: 300;
-        
+        color: #7267CB;       
+    }
+
+    div.titulo-relatorio{
+        padding: 5px 15px;
+        display: flex;
+        align-items: flex-end;
+        flex-direction: row-reverse;
+    }
+    p.titulo-relatorio {
+        color: #F0EBE3;
+        font-size: 18px;
+        margin-top: 15px;
+    }
+
+    h2.titulo-vendas {
+        color: #7267CB;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0px 0px 20px 0px;
     }
     
     .container-logo {
@@ -89,14 +113,33 @@ p {
 
     .container-logo a {
         color: unset;
+        text-decoration: none;
     }
 
-    footer {
-        background-color: #AD8B73;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    #sales {
+        padding: 40px 10px;
     }
+
+    .dev-meta-container {
+        width: 90%;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .dev-meta-card {
+        background-color: #112B3C;
+        border: 1px solid #7267CB;
+        border-radius: 10px;
+        padding: 40px 20px;
+    }  
     
+    .dev-meta-form-control {
+        height: 46px;
+        background-color: #111324;
+        border: 1px solid #7267CB;
+        border-radius: 5px;
+        margin: 0px 0px 20px 0px;
+        width: 100%;
+        padding: 10px 25px;
+    }
 }
 
