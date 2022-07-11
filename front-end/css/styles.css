@@ -15,6 +15,7 @@ body {
     color: #DFF6FF;
 }
 
+/* MOBILE */
 @media only screen and (max-width: 575px) {
     
     .hidden {
@@ -122,6 +123,7 @@ body {
 
     .dev-meta-table th {
         padding: 5px;
+        text-align: center;
     }
 
     .dev-meta-table tbody {
@@ -167,6 +169,7 @@ body {
   
 }
 
+/* WEB */
 @media only screen and (min-width: 992px) {
     header {
         height: 220px;
@@ -269,6 +272,7 @@ body {
 
     .dev-meta-table th {
         padding: 25px;
+        text-align: center;
     }
 
     .dev-meta-table tbody {
@@ -314,8 +318,9 @@ body {
     .show {
         display: table-cell;
     }
+}
 
-
+/* TABLET */
 @media only screen and (min-width: 576px) and (max-width: 991px) {
     header {
         height: 220px;
@@ -460,7 +465,7 @@ body {
         width: 100%;
     }
 
-    .hidden {
+    .hidden-tablet {
         display: none;
     }
 }
