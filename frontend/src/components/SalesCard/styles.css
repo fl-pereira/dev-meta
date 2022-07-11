@@ -1,0 +1,232 @@
+/* WEB */
+@media only screen and (min-width: 992px) {
+
+    h2.titulo-vendas {
+        color: #7267CB;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .dev-meta-card {
+        background-color: #112B3C;
+        border: 1px solid #7267CB;
+        border-radius: 10px;
+        padding: 40px 20px;
+    }
+
+    .dev-meta-form-container {
+        margin: 0px 0px 20px 0px;
+        max-width: 300px;
+    }
+
+    .dev-meta-form-control {
+        height: 46px;
+        background-color: #111324;
+        border: 1px solid #7267CB;
+        border-radius: 5px;
+        width: 100%;
+        padding: 10px 25px;
+        font-size: 18px;
+    }
+
+    .dev-meta-table {
+        width: 100%;
+        border-spacing: 0px;
+        border-collapse: collapse;
+    }
+
+    .dev-meta-table thead {
+        height: 55px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #FFFFFF !important;
+    }
+
+    .dev-meta-table th {
+        padding: 25px;
+        text-align: center;
+    }
+
+    .dev-meta-table tbody {
+        font-size: 20px;
+        font-weight: 300;
+        color: #FFFFFF !important;
+    }
+
+    .dev-meta-table tbody tr {
+        height: 80px;
+        border-top: 1px solid #7267CB;
+    }
+
+    .dev-meta-table tbody tr:nth-child(odd) {
+        background-color: #0e212e;
+    }
+
+    .dev-meta-table tbody tr:hover>td {
+        background-color: #6E3CBC;
+    }
+
+    .dev-meta-table tbody td {
+        padding: 25px;
+    }
+
+}
+
+
+/* MOBILE */
+@media only screen and (max-width: 575px) {
+
+    h2.titulo-vendas {
+        color: #7267CB;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .hidden {
+        display: none;
+    }
+
+    .dev-meta-card {
+        background-color: #112B3C;
+        border: 1px solid #7267CB;
+        border-radius: 10px;
+        padding: 40px 20px;
+        width: 350px;
+    }
+
+    .dev-meta-form-container {
+        margin: 0px 0px 20px 0px;
+        max-width: 300px;
+    }
+
+    .dev-meta-form-control {
+        height: 46px;
+        background-color: #111324;
+        border: 1px solid #7267CB;
+        border-radius: 5px;
+        width: 100%;
+        padding: 10px 25px;
+        font-size: 18px;
+    }
+
+    .dev-meta-table {
+        width: 100%;
+        border-spacing: 0px;
+        border-collapse: collapse;
+    }
+
+    .dev-meta-table thead {
+        height: 55px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #FFFFFF !important;
+    }
+
+    .dev-meta-table th {
+        padding: 5px;
+        /*text-align: center;*/
+    }
+
+    .dev-meta-table tbody {
+        font-size: 20px;
+        font-weight: 300;
+        color: #FFFFFF !important;
+    }
+
+    .dev-meta-table tbody tr {
+        height: 80px;
+        border-top: 1px solid #7267CB;
+    }
+
+    .dev-meta-table tbody tr:nth-child(odd) {
+        background-color: #0e212e;
+    }
+
+    .dev-meta-table tbody tr:hover>td {
+        background-color: #6E3CBC;
+    }
+
+    .dev-meta-table tbody td {
+        padding: 5px;
+    }
+
+}
+
+/* TABLET */
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+
+    h2.titulo-vendas {
+        color: #7267CB;
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0px 0px 20px 0px;
+    }
+
+    .dev-meta-card {
+        background-color: #112B3C;
+        border: 1px solid #7267CB;
+        border-radius: 10px;
+        padding: 40px 20px;
+    }
+
+    .dev-meta-form-container {
+        margin: 0px 0px 20px 0px;
+        max-width: 300px;
+    }
+
+    .dev-meta-form-control {
+        height: 46px;
+        background-color: #111324;
+        border: 1px solid #7267CB;
+        border-radius: 5px;
+        width: 100%;
+        padding: 10px 25px;
+        font-size: 18px;
+    }
+
+    .dev-meta-table {
+        width: 100%;
+        border-spacing: 0px;
+        border-collapse: collapse;
+    }
+
+    .dev-meta-table thead {
+        height: 55px;
+        font-size: 16px;
+        font-weight: bold;
+        color: #FFFFFF !important;
+    }
+
+    .dev-meta-table th {
+        padding: 25px;
+    }
+
+    .dev-meta-table tbody {
+        font-size: 20px;
+        font-weight: 300;
+        color: #FFFFFF !important;
+    }
+
+    .dev-meta-table tbody tr {
+        height: 80px;
+        border-top: 1px solid #7267CB;
+    }
+
+    .dev-meta-table tbody tr:nth-child(odd) {
+        background-color: #0e212e;
+    }
+
+    .dev-meta-table tbody tr:hover>td {
+        background-color: #6E3CBC;
+    }
+
+    .dev-meta-table tbody td {
+        padding: 25px;
+    }
+
+    .hidden-tablet {
+        display: none;
+    }
+}

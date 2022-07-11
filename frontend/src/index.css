@@ -9,9 +9,64 @@
   font-family: 'Noto Sans', sans-serif !important;
   box-sizing: border-box;
   color: #DFF6FF;
+  margin: 0px;
+  padding: 0px;
 }
 
-body, html {
-    color: #DFF6FF;
-    background-color: #171A2E;
+body,
+html {
+  color: #DFF6FF;
+  background-color: #171A2E;
+}
+
+/* MOBILE */
+@media only screen and (max-width: 575px) {
+
+  .hidden {
+    display: none;
+  }
+
+  #sales {
+    padding: 40px 10px;
+  }
+
+  .dev-meta-container {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+}
+
+/* WEB */
+@media only screen and (min-width: 992px) {
+
+  #sales {
+    padding: 40px 10px;
+  }
+
+  .dev-meta-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+}
+
+/* TABLET */
+@media only screen and (min-width: 576px) and (max-width: 991px) {
+
+  #sales {
+    padding: 40px 10px;
+  }
+
+  .dev-meta-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .hidden-tablet {
+    display: none;
+  }
 }
