@@ -13,6 +13,7 @@
         border: 1px solid #7267CB;
         border-radius: 10px;
         padding: 40px 20px;
+        margin: 0 auto;
     }
 
     .dev-meta-form-container {
@@ -93,7 +94,8 @@
         border: 1px solid #7267CB;
         border-radius: 10px;
         padding: 40px 20px;
-        width: 350px;
+        width: 320px;
+        margin: 0 auto;
     }
 
     .dev-meta-form-container {
@@ -169,6 +171,9 @@
         border: 1px solid #7267CB;
         border-radius: 10px;
         padding: 40px 20px;
+        margin: 0 auto;
+        width: 90%;
+        max-width: 800px;
     }
 
     .dev-meta-form-container {
