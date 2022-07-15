@@ -70,6 +70,7 @@
 
     .dev-meta-table tbody td {
         padding: 25px;
+        text-align: center;
     }
 
 }
