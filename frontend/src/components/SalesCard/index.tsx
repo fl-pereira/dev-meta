@@ -74,7 +74,7 @@ function SalesCard() {
                                     <td>
                                         <div>
                                             <div className="btn-notifica">
-                                                <NotificationButton />
+                                                <NotificationButton saleId={sale.id} />
                                             </div>
                                         </div>
                                     </td>
