@@ -46,7 +46,6 @@
 
     .dev-meta-table th {
         padding: 25px;
-        text-align: center;
     }
 
     .dev-meta-table tbody {
@@ -70,9 +69,6 @@
 
     .dev-meta-table tbody td {
         padding: 25px;
-        text-align: center;
-    }
-
 }
 
 
