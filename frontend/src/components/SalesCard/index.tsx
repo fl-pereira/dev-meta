@@ -4,20 +4,24 @@ import "react-datepicker/dist/react-datepicker.css"
 import './styles.css'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
+import { BASE_URL } from '../../utils/request'
+import { Sale } from '../../models/sale'
 
 function SalesCard() {
 
-    const pastDate = new Date(new Date().setDate(new Date().getDate() - 90 ));
+    const pastDate = new Date(new Date().setDate(new Date().getDate() - 90));
     const [minDate, setMinDate] = useState(pastDate);
     const [maxDate, setMaxDate] = useState(new Date());
 
+    const [sales, setSales] = useState<Sale[]>([]);
+
     useEffect(() => {
-        axios.get("http://localhost:8080/sales")
+        axios.get(`${BASE_URL}/sales`)
             .then(response => {
-                console.log(response.data)
+                setSales(response.data.content)
             })
     }, []);
-    
+
     return (
         <div className="dev-meta-card">
             <h2 className="titulo-vendas">VENDAS</h2>
@@ -53,36 +57,27 @@ function SalesCard() {
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td className="hidden hidden-tablet">204</td>
-                            <td className="hidden">09/07/2022</td>
-                            <td>Felipe</td>
-                            <td className="hidden hidden-tablet">25</td>
-                            <td className="hidden hidden-tablet">103</td>
-                            <td>25.000,00</td>
-                            <td>
-                                <div>
-                                    <div className="btn-notifica">
-                                        <NotificationButton />
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td className="hidden hidden-tablet">204</td>
-                            <td className="hidden">09/07/2022</td>
-                            <td>Felipe</td>
-                            <td className="hidden hidden-tablet">25</td>
-                            <td className="hidden hidden-tablet">103</td>
-                            <td>25.000,00</td>
-                            <td>
-                                <div>
-                                    <div className="btn-notifica">
-                                        <NotificationButton />
-                                    </div>
-                                </div>
-                            </td>
-                        </tr>
+
+                        {sales.map(sale => {
+                            return (
+                                <tr key={sale.id}>
+                                    <td className="hidden hidden-tablet">{sale.id}</td>
+                                    <td className="hidden">{new Date(sale.date).toLocaleDateString()}</td>
+                                    <td>{sale.sellerName}</td>
+                                    <td className="hidden hidden-tablet">{sale.visited}</td>
+                                    <td className="hidden hidden-tablet">{sale.deals}</td>
+                                    <td>{sale.amount.toFixed(2)}</td>
+                                    <td>
+                                        <div>
+                                            <div className="btn-notifica">
+                                                <NotificationButton />
+                                            </div>
+                                        </div>
+                                    </td>
+                                </tr>
+                            )
+                        })
+                        }
 
                     </tbody>
 
